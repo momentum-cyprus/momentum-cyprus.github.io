@@ -675,7 +675,7 @@ html:not(.js) .tour-stage{position:relative}
 
 /* footer */
 .foot{padding:72px var(--gutter) 40px;border-top:1px solid var(--line)}
-.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:start}
 .foot-logo{width:min(260px,70vw);height:auto;color:var(--text);fill:currentColor;display:block}
 .foot p,.foot li{color:var(--text-2);font-size:.95rem}
 .foot ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
@@ -1030,15 +1030,13 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
 <canvas id="env" aria-hidden="true"></canvas>
 
 <header class="nav" id="nav">
-  <a class="brand" href="./" data-go dir="ltr" aria-label="Momentum Capital Group, home">
+  <a class="brand" href="#top" dir="ltr" aria-label="Momentum Capital Group, home">
     <span class="m3d" data-spin></span>
     <svg class="brand-word" viewBox="0 0 1081 100" aria-hidden="true" focusable="false"><use href="#wmtop"/></svg>
   </a>
   <div class="nav-cta">
-    <nav class="seg" id="seg" aria-label="Main">
+    <nav class="seg" id="seg" aria-label="Main" hidden style="display:none">
       <span class="seg-slab" aria-hidden="true"></span>
-      <a href="#top" data-key="cyprus" aria-current="page"><span>Cyprus</span></a>
-      <a href="https://momentum-israel.github.io/" data-key="israel" data-go><span>Israel</span></a>
     </nav>
     <div class="lang" dir="ltr"><span class="cur" aria-current="true">EN</span><span class="sep" aria-hidden="true">/</span><a href="he/" hreflang="he" lang="he" data-lang="he">עב<span class="sr-only"> עברית</span></a></div>
     <a class="btn btn-primary btn-sm" href="#consult">Book a consultation</a>
@@ -1219,7 +1217,6 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <div class="q"><button type="button" aria-expanded="false" aria-controls="a4" id="q4">Does this home qualify for residency?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a4" role="region" aria-labelledby="q4" hidden><p>Only new builds bought from a developer, for at least &euro;300,000 plus VAT, qualify for the fast residency route. We mark every home that does, and your lawyer confirms it.</p></div></div>
         <div class="q"><button type="button" aria-expanded="false" aria-controls="a5" id="q5">Whose side is the lawyer on?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a5" role="region" aria-labelledby="q5" hidden><p>Yours. We work with independent lawyers who act only for you, never for the seller or the developer.</p></div></div>
         <div class="q"><button type="button" aria-expanded="false" aria-controls="a6" id="q6">Do I need to fly to Cyprus to buy?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a6" role="region" aria-labelledby="q6" hidden><p>No. We can run viewings by live video, and your lawyer can sign for you with a power of attorney. Most clients still like to visit once before they commit.</p></div></div>
-        <div class="q"><button type="button" aria-expanded="false" aria-controls="a7" id="q7">Can I invest in Cyprus and Israel together?<span class="pm" aria-hidden="true"></span></button><div class="a" id="a7" role="region" aria-labelledby="q7" hidden><p>Yes. Two markets are one way to spread risk. One team, one plan, and one call to start. <a href="https://momentum-israel.github.io/" data-go>See Israel</a></p></div></div>
       </div>
     </div>
   </section>
@@ -1236,7 +1233,6 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <ul class="contact-list rv" style="--d:3">
           <li><span class="k">Email</span><a class="js-email" href="#consult">Add your email before launch</a></li>
           <li><span class="k">Phone</span><span class="js-phone">Add your phone before launch</span></li>
-          <li><span class="k">Markets</span><span>Cyprus and Israel</span></li>
         </ul>
       </div>
       <form class="form rv" style="--d:2" id="form" novalidate>
@@ -1267,11 +1263,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
     <div class="foot-grid">
       <div>
         <svg class="foot-logo" viewBox="0 0 1390 240" role="img" aria-label="Momentum Capital Group"><use href="#lockupSym"/></svg>
-        <p style="margin-top:22px;max-width:36ch">Villas and residency homes in Cyprus. New projects and commercial real estate in Israel.</p>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul><li><a href="./" data-go>Cyprus</a></li><li><a href="https://momentum-israel.github.io/" data-go>Israel</a></li><li><a href="./" data-go>Home</a></li></ul>
+        <p style="margin-top:22px;max-width:36ch">Villas and residency homes in Cyprus.</p>
       </div>
       <div>
         <h4>Contact</h4>
